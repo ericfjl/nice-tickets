@@ -1,0 +1,20 @@
+{
+  "name": "nice-tickets-project",
+  "version": "1.0.0",
+  "description": "nice-tickets",
+  "keywords": [
+    "hardhat",
+    "ethereum",
+    "solidity"
+  ],
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/hardhat-upgrades": "^1.6.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.3.1",
+    "hardhat": "^2.4.0",
+    "husky": "^4.2.5"
+  }
+}
