@@ -78,7 +78,10 @@ operating steps (.env 's path is project's root path):
 ```shell script
 echo SKIP_PREFLIGHT_CHECK=true >> .env
 ```
-
+### demo dapp
+```http request
+http://159.138.104.81:3000
+```
 ### references
 - [hardhat](https://hardhat.org/getting-started/)
 - [upgradeable](https://docs.openzeppelin.com/contracts/4.x/upgradeable)

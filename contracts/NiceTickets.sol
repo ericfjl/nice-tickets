@@ -30,8 +30,8 @@ contract NiceTickets is Initializable {
 
   //prize number
   function prizeNumber() private view returns (uint) {
-    return 1234;// test
-//    return uint(keccak256(abi.encodePacked(block.timestamp, block.difficulty))) % 10000;
+//    return 1234;// test
+    return uint(keccak256(abi.encodePacked(block.timestamp, block.difficulty))) % 10000;
   }
   function placeBet(uint _userNumber) public payable{
     require(msg.value == betMinAmount, "invalid bet amount!");
