@@ -3,7 +3,7 @@ pragma solidity ^0.6.9;
 
 import "@openzeppelin/upgrades-core/contracts/Initializable.sol";
 
-contract NiceTickets is Initializable {
+contract NiceTicketsV2 is Initializable {
 
   address owner;
 
@@ -25,13 +25,11 @@ contract NiceTickets is Initializable {
     firstPrizeMaxAmount = 1000*10**18;//1000ETH 一等奖
     secondPrizeMaxAmount = 10*10**18;//10ETH 二等奖
     betMinAmount = 1*10**18;
-
   }
 
   //prize number
   function prizeNumber() private view returns (uint) {
-    return 1234;// test
-//    return uint(keccak256(abi.encodePacked(block.timestamp, block.difficulty))) % 10000;
+    return uint(keccak256(abi.encodePacked(block.timestamp, block.difficulty))) % 10000;
   }
   function placeBet(uint _userNumber) public payable{
     require(msg.value == betMinAmount, "invalid bet amount!");
